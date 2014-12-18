@@ -1,3 +1,5 @@
+main = require "./main"
+
 angular.module "testApp", [
   "ngAnimate"
   "ngTouch"
@@ -5,4 +7,10 @@ angular.module "testApp", [
   "ngRoute"
   "angular-loading-bar"
   "templates"
+  main.name
 ]
+
+.config ($routeProvider) ->
+  $routeProvider
+    .otherwise
+      redirectTo: "/"
