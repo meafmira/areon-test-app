@@ -10,7 +10,9 @@ angular.module "testApp", [
   main.name
 ]
 
-.config ($routeProvider) ->
+.config ($routeProvider, $locationProvider) ->
   $routeProvider
     .otherwise
       redirectTo: "/"
+
+  $locationProvider.hashPrefix('!')

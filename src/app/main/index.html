@@ -1,1 +1,20 @@
-<div>Main view</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table table-striped">
+        <tr>
+          <th>Название</th>
+          <th>Сообщение</th>
+          <th>Статус</th>
+        </tr>
+        <tr ng-repeat="service in main.services">
+          <td>
+            <a ng-href="#!/services/{{ ::service.serviceId }}" ng-bind="::service.name"></a>
+          </td>
+          <td ng-bind="::service.serviceMessage"></td>
+          <td ng-bind="::service.serviceStatus"></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
