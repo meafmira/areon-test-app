@@ -21,7 +21,7 @@ function browserSyncInit(baseDir, files, browser) {
   }
 
   browserSync.instance = browserSync.init(files, {
-    startPath: '/',
+    startPath: '/index.html',
     server: {
       baseDir: baseDir,
       middleware: middleware,

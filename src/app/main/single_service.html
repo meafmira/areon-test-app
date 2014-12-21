@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h2 ng-bind="singleService.service.name"></h2>
+      <table class="table">
+        <tr>
+          <th>Абонентская плата</th>
+          <td ng-class="{ bold: singleService.service.isSpecial }"
+              ng-bind="singleService.service.abonka"></td>
+        </tr>
+        <tr>
+          <th>Сообщение</th>
+          <td ng-bind="singleService.service.serviceMessage"></td>
+        </tr>
+      </table>
+      <a href="#!/services" class="btn btn-primary btn-block">Назад</a>
+    </div>
+  </div>
+</div>

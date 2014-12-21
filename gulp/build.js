@@ -94,7 +94,10 @@ gulp.task('html', ['styles', 'partials', 'browserify'], function () {
     .pipe($.rev())
     .pipe(jsFilter)
     .pipe($.ngAnnotate())
-    .pipe($.uglify({preserveComments: $.uglifySaveLicense}))
+    .pipe($.uglify({
+      mangle: false,
+      preserveComments: $.uglifySaveLicense
+    }))
     .pipe(jsFilter.restore())
     .pipe(cssFilter)
     .pipe($.replace('bower_components/bootstrap/fonts','fonts'))

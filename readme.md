@@ -1,6 +1,5 @@
 Test application for Areon
 =============================
-[Demo](http://miafmira.github.io/test-app-areon/)
 Develop
 -----------------------------
 1. npm install -g gulp bower
