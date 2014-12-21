@@ -13,6 +13,6 @@ angular.module "testApp", [
 .config ($routeProvider, $locationProvider) ->
   $routeProvider
     .otherwise
-      redirectTo: "/"
+      redirectTo: "/services"
 
   $locationProvider.hashPrefix('!')
